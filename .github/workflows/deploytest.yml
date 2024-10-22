@@ -3,10 +3,10 @@ name: Deploy Workflow aaa
 on:
   push:
     branches:
-      - feat/testing
+      - "*"
   pull_request:
     branches:
-      - feat/testing
+      - "*"
 jobs:
   build:
     runs-on: ubuntu-latest
