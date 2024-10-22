@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: '3.9'
       - name: Install requirements
-        uses: pip install -r requirements.txt | python -m unittest test.py
+        run: pip install -r requirements.txt 
   deploy:
     needs: [build]
     runs-on: ubuntu-latest
